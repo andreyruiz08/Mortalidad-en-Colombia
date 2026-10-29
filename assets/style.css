@@ -1,0 +1,110 @@
+/* Estilos de la aplicación (Dash carga automáticamente la carpeta assets/) */
+
+:root {
+    --fondo: #F6F4FB;
+    --tarjeta: #FFFFFF;
+    --texto: #2E2A3B;
+    --texto-suave: #6B6680;
+    --borde: #EEEAF5;
+    --acento: #9284D6;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background: var(--fondo);
+    color: var(--texto);
+    font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+.contenedor {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 32px 16px 24px;
+}
+
+.encabezado h1 {
+    margin: 0 0 6px;
+    font-size: 30px;
+}
+
+.encabezado p {
+    margin: 0;
+    color: var(--texto-suave);
+}
+
+.indicadores {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 16px;
+    margin: 24px 0;
+}
+
+.indicador {
+    background: var(--tarjeta);
+    border: 1px solid var(--borde);
+    border-left: 5px solid var(--acento);
+    border-radius: 12px;
+    padding: 14px 16px;
+    display: flex;
+    flex-direction: column;
+}
+
+.indicador-valor {
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.indicador-etiqueta {
+    color: var(--texto-suave);
+    font-size: 13px;
+}
+
+.cuadricula {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.tarjeta {
+    background: var(--tarjeta);
+    border: 1px solid var(--borde);
+    border-radius: 14px;
+    padding: 18px 18px 8px;
+    min-width: 0;
+}
+
+.ancho-completo {
+    grid-column: 1 / -1;
+}
+
+.tarjeta h2 {
+    margin: 0 0 4px;
+    font-size: 19px;
+}
+
+.descripcion {
+    margin: 0 0 8px;
+    color: var(--texto-suave);
+    font-size: 14px;
+}
+
+.pie-pagina {
+    margin-top: 24px;
+    text-align: center;
+    color: var(--texto-suave);
+    font-size: 13px;
+}
+
+@media (max-width: 900px) {
+    .cuadricula {
+        grid-template-columns: 1fr;
+    }
+}
+
+.encabezado {
+    margin-bottom: 24px;
+}
