@@ -2,7 +2,7 @@
 
 Aplicación web interactiva hecha con **Python, Plotly y Dash** para analizar las muertes no fetales registradas en Colombia durante el año 2019.
 
-- **Aplicación en línea (Render):** https://mortalidad-en-colombia-jeb1.onrender.com
+- **Aplicación en línea (Render):** https://mortalidad-en-colombia-88us.onrender.com
 - **Repositorio (GitHub):** https://github.com/andreyruiz08/Mortalidad-en-Colombia
 
 Autor: **Andrey Ruiz**
